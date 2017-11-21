@@ -1,10 +1,10 @@
-Systemgebühren
+# Systemgebühren
 
-Transaktionsgebühren
+## Transaktionsgebühren
 
 Zurzeit gibt es keine Transaktionsgebühren, aber der User kann freiwillig eine Gebühr bezahlen um bevorzugt behandelt zu werden.
 
-Smart Contract Gebühren
+## Smart Contract Gebühren
 
 Die Gebührenstruktur für Smart Contracts kann aus der Tabelle weiter unten entnommen werden.
 
@@ -14,7 +14,7 @@ Die unten angegebenen Gebühren sind Mindestgebühren. Der User kann freiwillig 
 
 Alle Smart Contract Gebühren werden als Servicegebühren behandelt und in einem Pool für die Rückverteilung an alle NEO holders gesammelt. Die Verteilung erfolgt proportional zur Menge von NEO.
 
-Gebühren für System Calls
+### Gebühren für System Calls
 
 | SysCall                               | Gebühr [Gas]  |
 |---------------------------------------|:-------------:|
@@ -38,7 +38,7 @@ Gebühren für System Calls
 | Storage.Delete                        | 0.1           |
 | (Default)                             | 0.001         |
 
-Gebühren für Instructions
+### Gebühren für Instructions
 
 | Instruction                           | Gebühr [Gas]  |
 |---------------------------------------|:-------------:|
