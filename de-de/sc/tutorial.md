@@ -17,7 +17,7 @@ In der Java JVM oder .NET CLR zum Beispiel, wird der Source Code in den relevant
 
 ### Virtual Machine Architektur
 
-https://github.com/neo-project/docs/blob/master/assets/neo-vm.jpg?raw=true 
+![](../../assets/neo-vm.jpg) 
 
 Dieses Diagramm zeigt die Architektur der Neo Virtual Machine (NeoVM), wobei der Teil in der gestrichelten Box der Kern der Virtual Machine darstellt.
 
@@ -66,9 +66,9 @@ Der return Wert des Contracts ist immer 'false', was anzeigt, dass die Assets di
 
 Mehr Bespiele finden Sie hier:
 
-[Hello World] (tutorial/HelloWorld.md)
+[Hello World](tutorial/HelloWorld.md)
 
-[Lock(lock)] (tutorial/lock.md)
+[Lock (lock)](tutorial/lock.md)
 
 [Domain (Domain Name System)](tutorial/Domain.md)
 
