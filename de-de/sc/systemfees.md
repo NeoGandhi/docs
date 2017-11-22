@@ -8,11 +8,11 @@ Zurzeit gibt es keine Transaktionsgebühren, aber der User kann freiwillig eine 
 
 Die Gebührenstruktur für Smart Contracts kann aus der Tabelle weiter unten entnommen werden.
 
-Die ersten 10 GAS müssen nie bezahlt werden. Folglich muss keine Gebühr bezahlt werden, Wenn der Gesamtbetrag unter 10 GAS ist.
+Die ersten 10 GAS müssen nie bezahlt werden. Folglich muss keine Gebühr bezahlt werden, wenn der Gesamtbetrag unter 10 GAS bleibt.
 
 Die unten angegebenen Gebühren sind Mindestgebühren. Der User kann freiwillig mehr bezahlen um bevorzugt zu werden.
 
-Alle Smart Contract Gebühren werden als Servicegebühren behandelt und in einem Pool für die Rückverteilung an alle NEO holders gesammelt. Die Verteilung erfolgt proportional zur Menge von NEO.
+Alle Smart Contract Gebühren werden als Servicegebühren behandelt und in einem Pool für die Rückverteilung an alle NEO Halter gesammelt. Die Verteilung erfolgt proportional zur Menge von NEO.
 
 ### Gebühren für System Calls
 
