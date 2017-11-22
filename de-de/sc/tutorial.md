@@ -2,18 +2,18 @@
 
 Nachdem Sie das vorherige Tutorial gelesen haben, sollte es Ihnen möglich sein mit C# ein Smart Contract Projekt in Visual Studio 2015 oder 2017 zu kreieren. Hier werden wir nun diskutieren wie Smart Contracts in der NeoVM (Neo Virtual Machine) ausgeführt werden.
 
-## Smart Contract triggers
+## Smart Contract Auslöser
 
 Es gibt 2 Möglichkeiten Smart Contracts auszulösen:
 
 1. Contract User Authentication: Hier ist der Smart Contract ein Contract Account. Wenn ein User anfordert, den Contract Account in einem Asset zu nutzen, wird das den Smart Contract auslösen.
 
-2. Einene Smart Contract manuell auslösen: Hier sendet der User eine Transaktion (Invocation Transaction) um die Durchführung eines Smart Contracts auszulösen.
+2. Einen Smart Contract manuell auslösen: Hier sendet der User eine Transaktion (Invocation Transaction) um die Durchführung eines Smart Contracts auszulösen.
 
 ## NeoVM
 
 NeoVM ist die Virtual Machine, die die Neo Smart Contract Codes ausführt.  Wir sprechen hier über das Konzept von Virtual Machine im engeren Sinne, nicht in Anlehnung an Betriebssysteme oder Programme, welche das simulieren können, wie zum Beispiel VMware oder Hyper-V.
-In der Java JVM oder .NET CLR zum Beispiel, wird der Source Code in den relevanten Bytecode compiled und dann auf der entsprechenden Virtual Machine ausgeführt. Die JVM oder CLR wird den Bytecode ausführen, was ähnlich ist wie die Anweisungen auf einer echten, physischen Maschine auszuführen. Die entsprechenden binary Instructions werden trotzdem auf einer physischen Maschine ausgeführt. Die Physische Maschine holt Anweisungen aus dem Speicher ab, übertragt sie via BUS an die CPU, entschlüsselt und führt sie aus und speichert das Resultat.
+In der Java JVM oder .NET CLR zum Beispiel, wird der Source Code in den relevanten Bytecode compiled und dann auf der entsprechenden Virtual Machine ausgeführt. Die JVM oder CLR wird den Bytecode ausführen, was ähnlich ist wie die Anweisungen auf einer echten, physischen Maschine auszuführen. Die entsprechenden binary Instructions werden trotzdem auf einer physischen Maschine ausgeführt. Die Physische Maschine holt Anweisungen aus dem Speicher ab, überträgt sie via BUS an die CPU, entschlüsselt und führt sie aus und speichert das Resultat.
 
 ### Virtual Machine Architektur
 
@@ -32,7 +32,7 @@ Da das Standardverhalten von stackbasierten Virtual Machines darin besteht, Date
 
 #### Interoperable Service Layer
 
-Der blaue Teil auf der rechten Seite ist die Interoperable Service Layer der Virtual Machine (das Äquivalent zu den Peripheriegeräten). Zur Zeit bietet die Interoperable Service Layer einige APIs um auf die chain-chain Daten eines Smart Contracts zuzugreifein. Sie kann zugreifen auf Blockinformationen, Transaktionsinformationen, Contractinformationen, Assetinformationen und so weiter.
+Der blaue Teil auf der rechten Seite ist die Interoperable Service Layer der Virtual Machine (das Äquivalent zu den Peripheriegeräten). Zur Zeit bietet die Interoperable Service Layer einige APIs um auf die chain-chain Daten eines Smart Contracts zuzugreifen. Sie hat Zugriff auf Blockinformationen, Transaktionsinformationen, Contractinformationen, Assetinformationen und so weiter.
 
 Zusätzlich stellt die Interoperable Service Layer persistenten Speicherplatz für jeden Contract zur Verfügung. Jeder Smart Contract kann optional mit privatem Speicherplatz kreiert werden, in Form von einem Key-Value Objekt, bestimmt durch den Angerufenen des Contracts und nicht vom Kontext des persistenten Speicher. Der Anrufer muss dem Angerufenen seinen eigenen Speicherkontext übermitteln (um die Autorisierung abzuschliessen) bevor der Anrufer Lese- und Schreiboperationen ausführen kann.
 
@@ -62,7 +62,7 @@ public static bool Main ()
 }
 ```
 
-Der return Wert des Contracts ist immer 'false', was anzeigt, dass die Assets dieses Contracts nich benutzt werden können (das kann interpretiert werden als Verbrennen oder Zerstören eines Assets). Ein Solcher Contract kann zum Beispiel angewendet werden für Aktien einer Firma, welche abgeschrieben/storniert wurden.
+Der return Wert des Contracts ist immer 'false', was anzeigt, dass die Assets dieses Contracts nicht benutzt werden können (das kann interpretiert werden als Verbrennen oder Zerstören eines Assets). Ein Solcher Contract kann zum Beispiel angewendet werden für Aktien einer Firma, welche abgeschrieben/storniert wurden.
 
 Mehr Bespiele finden Sie hier:
 
