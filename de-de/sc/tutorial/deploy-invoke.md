@@ -39,8 +39,8 @@ Das Beispiel wurde auf dem Testnet zur Verfügung gestellt und kann auf dem folg
     ```
     
     Also benutzen wir:
-    * **Parameter List:** 0710
-    * **Return Type:** 05
+   * **Parameter List:** 0710
+   * **Return Type:** 05
     
 5. Falls der Contract Speicher benötigt (verwendet die [Read/Write API](../api/neo.md#readwrite-api)), kreuzen Sie das **Need Storage** Kästchen an. Der NEP5 Standard benutzt Speicher um Accounts zu halten, vergewissern Sie sich also dass Sie das angekreuzt haben wenn Sie einen NEP5 Token bereitstellen.
 6. Klicken Sie auf den **Deploy** Knopf
@@ -65,7 +65,7 @@ Um einen Smart Contract auf der NEO Blockchain aufzurufen brauchen Sie den Scrip
 7. Wählen Sie die Parameter im linken Feld an und füllen Sie die Werte der Variablen im unteren rechten Feld aus. 
 
    **Zum Beispiel um folgendes aufzurufen:**
-   * `6e616d65` when calling the Woolong, will return 'Woolong'.
+  * `6e616d65` when calling the Woolong, will return 'Woolong'.
     ```csharp
     if (method == "name") return name;
     ```
