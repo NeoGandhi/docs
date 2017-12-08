@@ -89,9 +89,27 @@ Es gibt zwei Methoden umd Deposit-Adressen zu generieren:
 
 Verwenden Sie zum Entwickeln des Programms zum dynamischen Generieren von Adressen die NEO-CLI-API [getnewaddress-Methode] (node ​​/ api / getnewaddress.html). Die erstellte Adresse wird zurückgegeben.
 
+-Der Exchange erstellt im Voraus eine Charge von NEO-Adressen. Wenn der Benutzer das erste Mal eine Einzahlung (NEO / NEO GAS) vornimmt, weist der Exchange ihm eine NEO-Adresse zu. Der Vorteil dieser Methode ist, dass Sie ein Backup der Wallet machen können, während der Nachteil ist, dass Sie NEO-Adressen manuell generieren müssen. Um eine Charge von Adressen zu generieren, führen Sie den NEO-CLI-Befehl `create address [n]` aus. Die Adressen werden automatisch in die Datei address.txt exportiert. [n] ist optional. Der Standardwert ist 1. Um zum Beispiel 100 Adressen zu erzeugen, geben Sie `create address 100` ein.
+
+> [!Anmerkung]
+>
+> Bei beiden Methoden muss der Exchange die Adressen in die Datenbank importieren und an die User verteilen.
+
+## Umgang mit Global Asset Transaktionen
+
+### Programme entwickeln für Ein- und Auszahlungen von Usern
+
+Für Global Assets muss der Exchange Programme entwickeln, um die folgenden Funktionen zu erfüllen:
+
+1. Überwachen Sie neue Blöcke über die NEO-CLI-API ([getblock-Methode] (node ​​/ api / getblock2.html)).
+2. Behandeln Sie die Einzahlungen von Usern gemäss den Transaktionsinformationen.
+3. Speichern Sie die Transaktionsdatensätze für den Austausch.
+
+#### Einzahlungen von Usern
+
+In Bezug auf Einzahlungen von Usern muss der Exchange Folgendes beachten:
+
 -
-
-
 
   
   
