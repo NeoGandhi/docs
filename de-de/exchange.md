@@ -89,7 +89,7 @@ Es gibt zwei Methoden umd Deposit-Adressen zu generieren:
 
 Verwenden Sie zum Entwickeln des Programms zum dynamischen Generieren von Adressen die NEO-CLI-API [getnewaddress-Methode] (node ​​/ api / getnewaddress.html). Die erstellte Adresse wird zurückgegeben.
 
--Der Exchange erstellt im Voraus eine Charge von NEO-Adressen. Wenn der Benutzer das erste Mal eine Einzahlung (NEO / NEO GAS) vornimmt, weist der Exchange ihm eine NEO-Adresse zu. Der Vorteil dieser Methode ist, dass Sie ein Backup der Wallet machen können, während der Nachteil ist, dass Sie NEO-Adressen manuell generieren müssen. Um eine Charge von Adressen zu generieren, führen Sie den NEO-CLI-Befehl `create address [n]` aus. Die Adressen werden automatisch in die Datei address.txt exportiert. [n] ist optional. Der Standardwert ist 1. Um zum Beispiel 100 Adressen zu erzeugen, geben Sie `create address 100` ein.
+- Der Exchange erstellt im Voraus eine Charge von NEO-Adressen. Wenn der Benutzer das erste Mal eine Einzahlung (NEO / NEO GAS) vornimmt, weist der Exchange ihm eine NEO-Adresse zu. Der Vorteil dieser Methode ist, dass Sie ein Backup der Wallet machen können, während der Nachteil ist, dass Sie NEO-Adressen manuell generieren müssen. Um eine Charge von Adressen zu generieren, führen Sie den NEO-CLI-Befehl `create address [n]` aus. Die Adressen werden automatisch in die Datei address.txt exportiert. [n] ist optional. Der Standardwert ist 1. Um zum Beispiel 100 Adressen zu erzeugen, geben Sie `create address 100` ein.
 
 > [!Anmerkung]
 >
@@ -112,7 +112,7 @@ In Bezug auf Einzahlungen von Usern muss der Exchange Folgendes beachten:
 - Die Neo Blockchan hat nur eine Main-Chain, ohne Side-Chains, wird nicht geforkt werden und wird keine isolierten Blöcke haben.
 - Eine Transaktion, die in der NEO-Blockchain aufgezeichnet wurde, kann nicht manipuliert werden, was bedeutet, dass eine Bestätigung einen Erfolg bei der Einzahlung darstellt.
 - Im Allgemeinen ist der Saldo einer Einzahlungsadresse in der Börse nicht gleich dem Saldo, den der User auf dem Exchange hat. Das kann sein, weil:
-  -
+
 
 
   
