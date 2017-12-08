@@ -109,7 +109,11 @@ Für Global Assets muss der Exchange Programme entwickeln, um die folgenden Funk
 
 In Bezug auf Einzahlungen von Usern muss der Exchange Folgendes beachten:
 
--
+- Die Neo Blockchan hat nur eine Main-Chain, ohne Side-Chains, wird nicht geforkt werden und wird keine isolierten Blöcke haben.
+- Eine Transaktion, die in der NEO-Blockchain aufgezeichnet wurde, kann nicht manipuliert werden, was bedeutet, dass eine Bestätigung einen Erfolg bei der Einzahlung darstellt.
+- Im Allgemeinen ist der Saldo einer Einzahlungsadresse in der Börse nicht gleich dem Saldo, den der User auf dem Exchange hat. Das kann sein, weil:
+  -
+
 
   
   
